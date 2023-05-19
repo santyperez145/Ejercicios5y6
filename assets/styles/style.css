@@ -246,7 +246,7 @@ th, td {
     flex-direction: row;
     justify-content: center;
     gap: 10rem;
-    margin: 2rem 0;
+    margin: 2rem 2rem 0 0;
     font-size: 1.5rem;
 }
 
@@ -256,6 +256,8 @@ th, td {
 }
 
 ol {
+  display: flex;
+  flex-wrap: wrap;
     list-style: none;
 }
 
@@ -268,6 +270,79 @@ ul {
 .list2 {
     margin-right: -21.5rem;
 }
+
+.raffle-section{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row-reverse;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+
+}
+
+.raffle-section p{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  font-size: 1.5rem;
+}
+
+.map-div{
+  display: flex;
+  flex-wrap: wrap;
+  width: 30%;
+  font-size: 1.5rem;
+  margin-top: 1rem;
+}
+.map-div p{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  font-size: 1.5rem;
+  margin-top: 1rem;
+}
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+fieldset {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 50%;
+  width: 150%;
+  background-color: #3a4ed5;
+}
+label {
+  color: black;
+  margin-top: 0.5rem;
+  margin-left: 0.5rem;
+  font-size: 1.2rem;
+}
+  select,input,textarea  {
+  background-color: #3acfd5;
+  width: 98%;
+}
+.input-radio {
+  width: 10%;
+  text-align: justify;
+}
+input[type="submit"] {
+  display: flex;
+  justify-content: end;
+  width: 15%;
+  margin-left: 10rem;
+  padding: 5px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
 
 footer {
     background-color: cyan;
@@ -290,5 +365,403 @@ footer p{
     height: 100%;
     width: 100%;
     color: black;
+
+}
+
+/* Media Queries */
+
+/* Mobile */
+@media (min-width: 320px) and (max-width: 767px) {
+  header {
+    height: 22vh;
+  }
+  header div{
+    height: 16vh;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  nav {
+    justify-content: center;
+    align-items: center;
+    height: 17vh;
+    width: 80vw;
+    flex-direction: column;
+  }
+  nav a {
+    font-size: 1rem;
+    margin: 0 0 0 0 ;
+  }
+  .logo {
+    margin-top: 1rem;
+    margin-right: 8px;
+    width: 2rem;
+  }
+  h1 {
+    font-size: 2rem;
+  }
+  .img1 {
+    height: 7rem;
+  }
+  .parrafo1 {
+    text-align: justify;
+    font-size: 0.8rem;
+  }
+  .div-home {
+    justify-content: space-around;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  #img2 {
+    height: 17rem;
+    width: 15rem;
+  }
+  .content div {
+    flex-direction: column;
+    margin: 1rem 0;
+  }
+  .content img{
+    height: 10rem;
+    width: 15rem;
+  }
+  .content p {
+    flex-direction: column;
+    font-size: 0.8rem;
+    text-align: center;
+    justify-content: center;
+  }
+  #imgdiv3 {
+    margin-right: 0rem;
+  }
+  #parrafo3 {
+    margin-right: 0rem;
+}
+.twoguys {
+    height: 15rem;
+    width: 19rem;
+    justify-content: center;
+    align-items: center;
+  }
+  .contact {
+    flex-direction: column;
+    font-size: 1rem;
+    margin-top: 1rem;
+  }
+  .infocontact {
+    font-size: 1.3rem;
+    margin-top: 2rem;
+    flex-direction: column;
+    align-content: center;
+  }
+  .infocontact a {
+    align-items: center;
+    justify-content: center;
+  }
+  .information-section {
+    align-items: center;
+    flex-direction: column;
+  }
+  .information-section p {
+    margin: 0rem;
+    font-size: 1rem;
+    flex-direction: column;
+    align-items: center;
+  }
+  table {
+    font-size: 1.3rem;
+    width: 50%;
+  }
+  th,td {
+    padding: 0.5rem;
+  }
+  .benefits-section div {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0rem;
+    margin: 2rem 12rem 0 0 ;
+    font-size: 0.7rem;
+    margin-left: 8rem;
+  }
+  #benefits {
+    font-size: 1rem;
+  }
+  .list2 {
+    margin-right: -12.5rem;
+  }
+  .raffle-section {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .raffle-section div{
+    display: flex;
+    
+  }
+  .raffle-section p {
+    margin: 0rem;
+    font-size: 0.8rem;
+    flex-direction: column;
+    align-items: center;
+  }
+  .map-div{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    font-size: 1rem;
+    margin-top: 1rem;
+  }
+  .map-div p{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    font-size: 0.9rem;
+    margin-top: 1rem;
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+  }
+  
+  fieldset {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 100%;
+    width: 100%;
+    background-color: #3a4ed5;
+  }
+  label {
+    color: black;
+    margin-top: 0.5rem;
+    margin-left: 0.5rem;
+    font-size: 1.2rem;
+  }
+    select,input,textarea  {
+    background-color: #3acfd5;
+    width: 98%;
+  }
+  .input-radio {
+    width: 10%;
+    text-align: justify;
+  }
+  input[type="submit"] {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-left: 0rem;
+    padding: 5px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  footer {
+    margin-top: 17.5rem;
+    font-size: 1rem;
+  }
+
+}
+  
+
+/* Tablet */
+ @media (min-width: 768px) and (max-width: 1023px) {
+  header div{
+    height: 16vh;
+  }
+  nav {
+    justify-content: center;
+    height: 16vh;
+    width: 80vw;
+    flex-direction: column;
+  }
+  nav a {
+    font-size: 1.2rem;
+    margin: 0 0 0 9rem;
+  }
+  .logo {
+    margin-right: 8px;
+    width: 4rem;
+  }
+  h2 {
+    margin-top: 2rem;
+    font-size: 2.5rem;
+  }
+  .img1 {
+    height: 7rem;
+    }
+    .parrafo1 {
+      font-size: 1.6rem;
+    }
+    .div-home {
+      flex-direction: column-reverse;
+      align-items: center;
+    }
+    #img2 {
+      height: 20rem;
+      width: 30rem;
+    }
+    .content div {
+      flex-direction: column;
+    }
+    .content img{
+      height: 25rem;
+      width: 30rem;
+    }
+    .content p {
+      flex-direction: column;
+      font-size: 2rem;
+      justify-content: center;
+    }
+    #imgdiv3 {
+      margin-right: 0rem;
+    }
+    #parrafo3 {
+      margin-right: 0rem;
+    }
+    .twoguys {
+      height: 30rem;
+      align-items: center;
+    }
+    .contact {
+      flex-direction: column;
+      font-size: 2rem;
+      margin-top: 1rem;
+    }
+    .infocontact {
+      font-size: 2.3rem;
+      margin-top: 2rem;
+      margin-left: 10rem;
+      flex-direction: column;
+      align-content: center;
+    }
+    .infocontact a {
+      align-items: center;
+      justify-content: center;
+      margin-top: 2rem;
+    }
+    .information-section {
+      align-items: center;
+      flex-direction: column;
+    }
+    .information-section p {
+      margin: 0rem;
+      font-size: 2rem;
+      flex-direction: column;
+      align-items: center;
+    }
+    table {
+      font-size: 2rem;
+      margin-top: 4rem;
+      width: 80%;
+    }
+    th,td {
+      padding: 3rem;
+    }
+    .benefits-section div {
+      flex-direction: column;
+      gap: 0rem;
+      margin: 2rem 12rem 0 0 ;
+      align-items: center;
+    }
+    .benefits-section img {
+      height: 20rem;
+      width: 20rem;
+    }
+    .list2 {
+      margin-right: -17.5rem;
+    }
+    .raffle-section {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+    }
+    .raffle-section div{
+      display: flex;
+      
+    }
+    .raffle-section p {
+      margin: 0rem;
+      font-size: 2rem;
+      flex-direction: column;
+      align-items: center;
+    }
+    .map-div{
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      font-size: 1.5rem;
+      margin-top: 1rem;
+    }
+    .map-div p{
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+      font-size: 2rem;
+      margin-top: 1rem;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin-top: 2rem;
+    }
+    
+    fieldset {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      height: 100%;
+      width: 150%;
+      background-color: #3a4ed5;
+    }
+    label {
+      color: black;
+      margin-top: 0.5rem;
+      margin-left: 0.5rem;
+      font-size: 1.2rem;
+    }
+      select,input,textarea  {
+      background-color: #3acfd5;
+      width: 98%;
+    }
+    .input-radio {
+      width: 10%;
+      text-align: justify;
+    }
+    input[type="submit"] {
+      display: flex;
+      justify-content: end;
+      width: 15%;
+      margin-left: 10rem;
+      padding: 5px 20px;
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      border-radius: 3px;
+      cursor: pointer;
+    }
+    footer {
+      font-size: 2rem;
+      margin-top: 15rem;
+    }
+  
+}
+
+/* Notebook */
+@media (min-width: 1024px) and (max-width: 1300px) {
+  .benefits-section div {
+    font-size: 1.1rem;
+  }
+  .list2 {
+    margin-right: -15.5rem;
+  }
 
 }
